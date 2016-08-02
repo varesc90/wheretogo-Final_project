@@ -1,0 +1,256 @@
+html,body
+{
+	margin: 0;
+	background-color: lightblue;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+/*===============================
+
+	HEADER
+
+=================================*/
+
+#header,#footer{
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	border: dotted 1px black;
+	color: white;
+}
+
+#header p{
+	padding: 10px;
+	font-size: 30px;
+}
+
+
+
+/*================================
+
+	World Map
+
+==================================*/
+#world_map div:hover{
+	cursor: pointer;
+}
+#world_map{
+	height: 500px;
+	background-image: url("world_map.gif");
+	  -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+      background-size: 100% 100%;
+}
+
+#asia_world_map{
+	opacity: 0;
+	position: absolute;
+	top: 105px;
+	right: 175px;
+}
+
+#europe_world_map{
+	opacity: 0;
+	position: absolute;
+	top: 122px;
+	left: 453px;
+}
+
+#namerica_world_map{
+	opacity: 0;
+	position: absolute;
+	left: 14px;
+	top: 118px;
+}
+
+#samerica_world_map{
+	opacity: 0;
+	position: absolute;
+	left: 122px;
+	top: 341px;
+}
+
+#africa_world_map{
+	opacity: 0;
+	position: absolute;
+	right: 527px;
+	top: 282px;
+}
+
+#asiatext_world_map,#europetext_world_map,#namericatext_world_map
+,#samericatext_world_map,#africatext_world_map
+{
+	background-color: black;
+	color: white;
+	display: none;
+	font-size: 20px;
+	padding: 10px;
+	position: absolute;
+	border: 1px black solid;
+	border-radius: 20%;
+}
+
+#asiatext_world_map{
+	right: 140px;
+	top: 200px;
+	}
+
+#europetext_world_map{
+	right: 653px;
+}
+
+#namericatext_world_map{
+	top:100px;
+	left: 50px;
+}
+
+#samericatext_world_map{
+	left: 50px;
+	top: 500px;
+}
+
+#africatext_world_map{
+	left: 500px;
+	top: 500px;
+}
+
+
+/*===================================
+
+	Asia Map
+
+======================================*/
+
+#Asia_map ,#Namerica_map{
+	display:none;
+}
+#Asia_map div,#Namerica_map div{
+	position: absolute;
+	width: 12px;
+	height: 15px;
+	color: black;
+	background-color: black;
+	border-radius: 50%;
+	display:none;
+}
+
+p.back{
+	padding: 20px;
+	border-radius: 50%;
+	background-color: lightgrey;
+	display:none;
+	position: absolute;
+	left: 10px;
+}
+
+p.back:hover{
+	cursor: pointer;
+}
+
+#Asia_map_img img,#Namerica_map_img img{
+	width: 200px;
+	position:absolute;
+	display:none;
+	border-radius: 20%;
+}
+#Asia_map div:hover{
+	cursor: pointer;
+}
+
+#greatwall_china{
+
+	top: 300px;
+	right: 400px;
+}
+
+#greatwall_img{
+	top: 140px;
+	right: 194px;
+}
+
+#taj_india{
+	top:400px;
+	right: 650px;
+}
+
+#taj_img{
+	top: 260px;
+	right: 670px;
+}
+
+#fuji_japan{
+	top: 335px;
+	right: 210px;
+}
+
+#fuji_img{
+	top:200px;
+	right: 5px;
+}
+#ankor_cambodia{
+	top: 470px;
+	right: 440px;
+}
+
+#ankor_img{
+	top: 400px;
+	right: 180px;
+}
+
+#taj_img{
+	top: 260px;
+	right: 670px;
+}
+
+
+/*===================================
+
+	N.America
+
+======================================*/
+
+#pyramid_mexico{
+	top: 460px;
+	right: 900px;
+}
+
+#pyramid_img{
+	top:300px;
+	right: 950px;
+}
+
+#statue_usa{
+	top: 400px;
+	right: 700px;
+}
+
+#statue_img{
+	top:300px;
+	right: 450px;
+}
+#cn_canada{
+	top: 200px;
+	right: 800px;
+}
+
+#cn_img{
+	top: 200px;
+	right: 550px;
+}
+
+
+/*===================================
+
+   Footer
+
+======================================*/
+
+#footer p{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
