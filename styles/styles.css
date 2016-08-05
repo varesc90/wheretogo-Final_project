@@ -128,7 +128,7 @@ html,body
 #Asia_map ,#Namerica_map{
 	display:none;
 }
-#Asia_map div,#Namerica_map div{
+#Asia_map div,#Namerica_map div, #Samerica_map div{
 	position: absolute;
 	width: 12px;
 	height: 15px;
@@ -151,7 +151,7 @@ p.back:hover{
 	cursor: pointer;
 }
 
-#Asia_map_img img,#Namerica_map_img img{
+#Asia_map_img img,#Namerica_map_img img, #Samerica_map_img img{
 	width: 200px;
 	position:absolute;
 	display:none;
@@ -242,6 +242,25 @@ p.back:hover{
 	right: 550px;
 }
 
+/*===================================
+
+	S.America
+
+======================================*/
+
+#christo_brazil, #christo_img{
+	top:200px;
+	right: 500px;
+}
+#machu_peru,#machu_img{
+	top: 200px;
+	right: 800px;
+}
+
+#eisland_polynesia,#eisland_img{
+	top: 370px;
+	right: 1200px;
+}
 
 /*===================================
 

@@ -40,6 +40,12 @@ $(document).ready(function() {
 		$("#africatext_world_map").hide()
 	});
 
+////////////////////////////////////
+///////////Click Function////////////////
+////////////////////////////////////
+
+
+
 	$("#asia_world_map").click(function(){
 		$("#world_map").css("background-image","url(images/asia_map.gif")
 		$("#mainmap").hide()
@@ -62,6 +68,24 @@ $(document).ready(function() {
 		blink('#Namerica_map div');
 	});
 
+
+	$("#samerica_world_map").click(function(){
+		$("#world_map").css("background-image","url(images/samerica.gif")
+		$("#mainmap").hide()
+		$("#Samerica_map div").show()
+		$("#Samerica_map p").show()
+		$('#Samerica_map').show()
+
+
+		blink('#Samerica_map div');
+	});
+
+
+	$(".back").click(function(){
+		hideAll();
+		$("#mainmap").show()
+		$("#world_map").css("background-image","url(styles/world_map.gif")
+			})
 
 
 
@@ -102,13 +126,7 @@ $(document).ready(function() {
 		$("#ankor_img").hide()	
 	});
 
-	$(".back").click(function(){
-		hideAll();
-		$("#mainmap").show()
-		$("#world_map").css("background-image","url(styles/world_map.gif")
-
-
-			})
+	
 
 ////////////////////////////////////
 ///////////North America////////////////
@@ -140,18 +158,80 @@ $(document).ready(function() {
 	});
 
 
+////////////////////////////////////
+///////////South America////////////////
+////////////////////////////////////
+
+
+	$("#christo_brazil").mouseenter(function(){
+		showImage("#christo_img")
+		$("#christo_img").show()	
+	});
+
+	$("#christo_brazil").mouseleave(function(){
+		$("#christo_img").hide()	
+		hideImage("#christo_img");	
+	});
+
+	$("#machu_peru").mouseenter(function(){
+		showImage("#machu_img");
+		$("#machu_img").show()	
+	});
+
+	$("#machu_peru").mouseleave(function(){
+		$("#machu_img").hide()	
+		hideImage("#machu_img");
+	});
+
+	$("#eisland_polynesia").mouseenter(function(){
+		showImage("#eisland_img")
+		$("#eisland_img").show()	
+	});
+
+	$("#eisland_polynesia").mouseleave(function(){
+		$("#eisland_img").hide()
+		hideImage("#eisland_img");	
+	});
+
 
 });
+
+
+
+
+////////////////////////////////////
+///////////Functions////////////////
+////////////////////////////////////
+
 
 function blink(element) {
     $(element).fadeOut(500);
     $(element).fadeIn(500);
     setTimeout(function(){
-    	blink(element)}, 1000);
+    	blink(element)
+    }, 1000);
 }
 
 function hideAll(){
+
 	// $("#Asia_map div").hide();
 	$('#Asia_map').hide();
 	$("#Namerica_map").hide();
+	$("#Samerica_map").hide();
 }
+
+function showImage(element){
+	$(element).css({
+		"right" : "-=250",
+		"top" : "-=100"
+	});
+}
+
+function hideImage(element){
+	$(element).css({
+		"right" : "+=250",
+		"top" : "+=100"
+	});	
+}
+
+
